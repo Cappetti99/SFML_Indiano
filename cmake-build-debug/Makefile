@@ -131,17 +131,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SFML_Indiano
+# Target rules for targets named SFML_Indiano_ROOT
 
 # Build rule for target.
-SFML_Indiano: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SFML_Indiano
-.PHONY : SFML_Indiano
+SFML_Indiano_ROOT: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SFML_Indiano_ROOT
+.PHONY : SFML_Indiano_ROOT
 
 # fast build rule for target.
-SFML_Indiano/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_Indiano.dir/build.make CMakeFiles/SFML_Indiano.dir/build
-.PHONY : SFML_Indiano/fast
+SFML_Indiano_ROOT/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_Indiano_ROOT.dir/build.make CMakeFiles/SFML_Indiano_ROOT.dir/build
+.PHONY : SFML_Indiano_ROOT/fast
+
+Game.o: Game.cpp.o
+
+.PHONY : Game.o
+
+# target to build an object file
+Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_Indiano_ROOT.dir/build.make CMakeFiles/SFML_Indiano_ROOT.dir/Game.cpp.o
+.PHONY : Game.cpp.o
+
+Game.i: Game.cpp.i
+
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_Indiano_ROOT.dir/build.make CMakeFiles/SFML_Indiano_ROOT.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_Indiano_ROOT.dir/build.make CMakeFiles/SFML_Indiano_ROOT.dir/Game.cpp.s
+.PHONY : Game.cpp.s
 
 main.o: main.cpp.o
 
@@ -149,7 +176,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_Indiano.dir/build.make CMakeFiles/SFML_Indiano.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_Indiano_ROOT.dir/build.make CMakeFiles/SFML_Indiano_ROOT.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -158,7 +185,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_Indiano.dir/build.make CMakeFiles/SFML_Indiano.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_Indiano_ROOT.dir/build.make CMakeFiles/SFML_Indiano_ROOT.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -167,7 +194,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_Indiano.dir/build.make CMakeFiles/SFML_Indiano.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_Indiano_ROOT.dir/build.make CMakeFiles/SFML_Indiano_ROOT.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -178,7 +205,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... SFML_Indiano"
+	@echo "... SFML_Indiano_ROOT"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

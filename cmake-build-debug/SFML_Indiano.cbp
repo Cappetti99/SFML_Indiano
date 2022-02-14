@@ -5,7 +5,7 @@
 		<Option title="SFML_Indiano"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug"/>
@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SFML_Indiano">
-				<Option output="/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/SFML_Indiano" prefix_auto="0" extension_auto="0"/>
+			<Target title="SFML_Indiano_ROOT">
+				<Option output="/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/SFML_Indiano_ROOT" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -53,14 +53,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j2 -f &quot;/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/Makefile&quot;  VERBOSE=1 SFML_Indiano"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/Makefile&quot;  VERBOSE=1 SFML_Indiano_ROOT"/>
 					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SFML_Indiano/fast">
-				<Option output="/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/SFML_Indiano" prefix_auto="0" extension_auto="0"/>
+			<Target title="SFML_Indiano_ROOT/fast">
+				<Option output="/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/SFML_Indiano_ROOT" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -75,18 +75,39 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j2 -f &quot;/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/Makefile&quot;  VERBOSE=1 SFML_Indiano/fast"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/Makefile&quot;  VERBOSE=1 SFML_Indiano_ROOT/fast"/>
 					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/lorenzo/CLionProjects/SFML_Indiano/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/lorenzo/CLionProjects/SFML_Indiano/Game.cpp">
+			<Option target="SFML_Indiano_ROOT"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/SFML_Indiano/Game.h">
+			<Option target="SFML_Indiano_ROOT"/>
+		</Unit>
 		<Unit filename="/home/lorenzo/CLionProjects/SFML_Indiano/main.cpp">
-			<Option target="SFML_Indiano"/>
+			<Option target="SFML_Indiano_ROOT"/>
 		</Unit>
 		<Unit filename="/home/lorenzo/CLionProjects/SFML_Indiano/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/SFML_Indiano/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/SFML_Indiano/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/SFML_Indiano/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/SFML_Indiano/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/SFML_Indiano/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
